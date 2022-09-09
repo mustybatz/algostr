@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "algostr"
+version = "0.1.0"
+description = ""
+authors = ["Barush Mendez <bmendez@grainchain.io>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.7.0"
+
+[tool.poetry.scripts]
+start = "algostr.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
