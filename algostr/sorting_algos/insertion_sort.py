@@ -1,9 +1,6 @@
 
-from logging import getLogger
 from typing import List
 import time
-
-LOGGER = getLogger('algostr.sorting_algos.insertion_sort')
 
 def insertionSort(arr: List[int]):
     
@@ -24,9 +21,8 @@ def insertionSort(arr: List[int]):
         arr[j + 1] = actual
         
     end = time.time()
-    
+        
     return {
-        'execution_time': end - start,
+        'execution_time': (end - start) * 1000,
         'n_elements': len(arr)
     }
-        
